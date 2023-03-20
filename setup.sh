@@ -28,12 +28,12 @@ echo -e "${YELLOW}${BOLD}   <---(( Coded by cyberxaman ))--> ${RESET}\n"
 # Check if the operating system is Termux
 if [[ $(uname -o) == *Android* ]]; then
     pkg update
-    pkg install -y python
+    pkg install -y python3
     pip install requests
     pip install websocket-client
 # Check if the operating system is Linux
 elif [[ $(uname -s) == Linux* ]]; then
-    sudo apt-get install -y python
+    sudo apt-get install -y python3
     pip install requests
     pip install websocket-client
 else
