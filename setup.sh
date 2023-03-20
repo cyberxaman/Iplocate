@@ -11,7 +11,7 @@ BOLD='\033[01m'
 RESET='\033[0m'
 
 # Print the banner with colors
-echo -e "${RED}d+${RESET}"
+echo -e "${RED}${RESET}"
 echo -e "${RED} _____       _                            "
 echo -e "(_____)     | |                 _         "
 echo -e "   _   ____ | | ___   ____ ____| |_  ____ "
