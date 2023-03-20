@@ -11,5 +11,9 @@ chmod +x setup.sh
 
 # Usage
 ```bash
-python3 iplocate.py -h
+python3 iplocate.py -v <victim_ip>
+```
+## to get own machine ip address
+```bash
+python3 iplocate.py -m
 ```
