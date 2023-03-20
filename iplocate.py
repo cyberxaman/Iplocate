@@ -82,6 +82,7 @@ try:
         url = f"https://www.google.com/maps/place/{data['lat']},{data['lon']}"
         print(red + "<--------------->" + red)
         print(a, "[Google Maps URL]:", url)
+        print(" " + yellow)
     else:
         print(" " + yellow)
 except KeyboardInterrupt:
