@@ -74,9 +74,10 @@ try:
     print(a, "[Longitude]:", data['lon'] if not args.m else ip)
     print(red + "<--------------->" + red)
     print(b, "[Latitude]:", data['lat'] if not args.m else ip)
-    print (b, "[Time zone]:", data['timezone'] if not args.m else ip)
+    print(red + "<--------------->" + red)
+    print (b, "[Time zone]:", data['timezone'])
     print(red+"<--------------->"+red)
-    print (a, "[Zip code]:", data['zip'] if not args.m else ip)
+    print (a, "[Zip code]:", data['zip'])
     if not args.m:
         url = f"https://www.google.com/maps/place/{data['lat']},{data['lon']}"
         print(red + "<--------------->" + red)
