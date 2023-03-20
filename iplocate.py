@@ -2,7 +2,7 @@
 
 # modules required
 import argparse
-import requests
+import requests, json
 import socket
 import sys
 
