@@ -24,6 +24,13 @@ echo -e "${RESET}"
 # Print the coder information with colors
 echo -e "${YELLOW}${BOLD}   <---(( Coded by cyberxaman ))--> ${RESET}\n"
 
+# installing requirements 
+echo -e "
+********************************************************************************
+Installation requirements
+
+********************************************************************************
+"
 
 # Check if the operating system is Termux
 if [[ $(uname -o) == *Android* ]]; then
