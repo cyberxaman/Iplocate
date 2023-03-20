@@ -4,7 +4,6 @@
 import argparse
 import requests
 import socket
-import webbrowser
 import sys
 
 # arguments and parser
