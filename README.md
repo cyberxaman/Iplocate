@@ -11,5 +11,5 @@ chmod +x setup.sh
 
 # Usage
 ```bash
-python3 iplocate.py
+python3 iplocate.py -h
 ```
