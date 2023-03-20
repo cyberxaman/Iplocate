@@ -78,9 +78,7 @@ try:
     print(red+"<--------------->"+red)
     print (a, "[Zip code]:", data['zip'] if not args.m else ip)
     if args.m:
-        url = f"https://www.google.com/maps/place/{data['lat']},{data['lon']}"
-        print(red + "<--------------->" + red)
-        print(a, "[Google Maps URL]:", url)
+        Print("Google Map url : N/A")
     else:
         url = f"https://www.google.com/maps/place/{data['lat']},{data['lon']}"
         print(red + "<--------------->" + red)
