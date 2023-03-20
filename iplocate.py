@@ -11,8 +11,8 @@ import sys
 
 # arguments and parser
 parser = argparse.ArgumentParser()
-parser.add_argument("-v", help="target/host IP address", type=str, dest='target')
-parser.add_argument("-m", help="get details about your machine", action='store_true')
+parser.add_argument("-v", help="target/host IP address and about victim machine", type=str, dest='target')
+parser.add_argument("-m", help="get your machine ip (only)", action='store_true')
 args = parser.parse_args()
 
 if args.m:
