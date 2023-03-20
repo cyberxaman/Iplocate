@@ -60,7 +60,7 @@ try:
     a = lgreen + bold + "[$]"
     b = cyan + bold + "[$]"
     print(a, "[IP Address]:", data['query'] if not args.m else ip)
-    print(red + "<--------------->" + red)
+    if not arg.m:
     print(b, "[ISP]:", data['isp'] if args.m else ip)
     print(red + "<--------------->" + red)
     print(a, "[Organisation]:", data['org'] if args.m else ip)
@@ -78,10 +78,9 @@ try:
     print (b, "[Time zone]:", data['timezone'] if args.m else ip)
     print(red+"<--------------->"+red)
     print (a, "[Zip code]:", data['zip'] if args.m else ip)
-    if not args.m:
-        url = f"https://www.google.com/maps/place/{data['lat']},{data['lon']}"
-        print(red + "<--------------->" + red)
-        print(a, "[Google Maps URL]:", url)
+    url = f"https://www.google.com/maps/place/{data['lat']},{data['lon']}"
+    print(red + "<--------------->" + red)
+    print(a, "[Google Maps URL]:", url)
     else:
         print(" " + yellow)
 except KeyboardInterrupt:
