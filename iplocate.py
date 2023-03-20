@@ -30,6 +30,27 @@ clear = '\033[0m'
 bold = '\033[01m'
 cyan = '\033[96m'
 
+# clear screen 
+if os.name == 'nt':
+    os.system('cls')
+else:
+    os.system('clear')
+
+# banner
+print(red+"""
+
+ _____       _                            
+(_____)     | |                 _         
+   _   ____ | | ___   ____ ____| |_  ____ 
+  | | |  _ \| |/ _ \ / ___) _  |  _)/ _  )
+ _| |_| | | | | |_| ( (__( ( | | |_( (/ / 
+(_____) ||_/|_|\___/ \____)_||_|\___)____)
+      |_|                                 
+
+"""+red)
+print (yellow+bold+"   <---(( Coded by cyberxaman ))--> \n"+clear)
+
+
 try:
     data = requests.get(api + ip).json() if not args.m else None
     sys.stdout.flush()
