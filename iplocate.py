@@ -1,3 +1,5 @@
+#!/bin/python3
+
 # made by cyberxaman
 
 # modules required
