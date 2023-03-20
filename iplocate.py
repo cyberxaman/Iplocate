@@ -77,13 +77,12 @@ try:
     print (b, "[Time zone]:", data['timezone'] if not args.m else ip)
     print(red+"<--------------->"+red)
     print (a, "[Zip code]:", data['zip'] if not args.m else ip)
-    if args.m:
-        Print("Google Map url : N/A")
-    else:
+    if not args.m:
         url = f"https://www.google.com/maps/place/{data['lat']},{data['lon']}"
         print(red + "<--------------->" + red)
         print(a, "[Google Maps URL]:", url)
-    print(" " + yellow)
+    else:
+        print(" Google map url : N/A")
 except KeyboardInterrupt:
     print('Terminating, Bye' + lgreen)
     sys.exit(0)
